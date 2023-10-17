@@ -1,7 +1,7 @@
 Cara menggunakan 
 1. clone repositori
 2. buka terminal di dalam folder yang sudah di clone
-3. ketikkan "coposer update" lalu tunggu sampai selesai
+3. ketikkan "comoser update" lalu tunggu sampai selesai
 4. setelah selesai buka .env di dalam folder TeknoShop
 5. ubah DB_DATABASE = laravel menjadi DB_DATABASE = TeknoShop
 6. buka aplikasi xampp dan nyalakan Apache dan MySql
