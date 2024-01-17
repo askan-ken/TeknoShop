@@ -1,111 +1,165 @@
+/* Import Google Font */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
 
+/* General styles */
 body {
   background: #fff;
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
 }
 
-h1{
-  font-family: 'Roboto', sans-serif;
+h1,
+.font-bold {
+  font-family: 'Monotype corsiva', sans-serif;
   font-weight: 700;
 }
 
-.font-light{
+.font-light {
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
 }
 
-.font-regular{
+.font-regular {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
 }
 
-.font-medium{
+.font-medium {
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
 }
 
-.font-bold{
-  font-family: 'Roboto', sans-serif;
-  font-weight: 700;
+/* Background colors */
+.my-bg-warning {
+  background-color: #f3f5f5 !important;
 }
 
-.my-bg-warning{
-  background-color: #CDFAD5 !important;
-}
-
-.my-bg-gray{
+.my-bg-gray {
   background-color: #F5F5F5 !important;
 }
 
-.my-bg-black{
+.my-bg-black {
   background-color: #000 !important;
 }
 
-.my-bg-dark{
+.my-bg-dark {
   background-color: #121212 !important;
 }
 
-
-.my-text-warning{
+/* Text colors */
+.my-text-warning {
   color: #CDFAD5 !important;
 }
 
-.my-text-gray{
+.my-text-gray {
   color: #8C8C8F !important;
 }
 
-.my-text-black{
+.my-text-black {
   color: #000 !important;
 }
 
-.my-text-dark{
+.my-text-dark {
   color: #121212 !important;
 }
 
-.my-btn-dark{
-  background-color: #121212 !important;
+/* Buttons */
+.my-btn-dark {
+  background-color: #ff0697 !important;
   color: #fff;
 }
 
-.my-btn-dark:hover{
+.my-btn-dark:hover {
   background-color: #1e1e1e !important;
   color: #fff;
 }
 
-.my-btn-black{
+.my-btn-black {
   background-color: #000 !important;
   color: #fff;
 }
 
-.my-btn-warning{
+.my-btn-warning {
   background-color: #CDFAD5 !important;
   color: #000;
 }
 
-.my-btn-gray{
+.my-btn-gray {
   background-color: #F5F5F5 !important;
   color: #000;
 }
 
-.my-border-gray{
-  border-color: #F5F5F5 !important;
+/* Navbar with Shadow */
+/* Navbar with Stylish Orange Background */
+/* Navbar with Stylish Aqua Background and Pink Box Shadow */
+/* Navbar with Stylish Orange Background and Matching Box Shadow */
+/* Navbar with Stylish Orange Background and Thicker Box Shadow */
+.navbar.navbar-light.my-bg-warning {
+  background-color: #FFA500 !important;
+  /* Warna oranye yang mencolok */
+  color: #ffffff;
+  /* Warna teks */
+  padding: 20px 7rem;
+  height: 75px;
+  border-bottom: 2px solid #CDFAD5;
+  box-shadow: 0px 8px 12px rgba(255, 105, 180, 0.2);
+  /* Bayangan lebih tebal */
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.dropdown-menu{
+  background-color:rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(25px) brightness(1.09);
+}
+/* Ubah ukuran logo di dalam navbar */
+.navbar-brand img {
+  width: 150px;
+  height: auto;
 }
 
-/* navbar */
-.navbar.navbar-light.my-bg-warning{
-  color: #000;
+/* Ubah ukuran font untuk menu navigasi di navbar */
+
+.navbar-nav .nav-link {
+  font-size: 18px;
 }
 
-.navbar .dropdown-toggle::before,
-.navbar .dropdown-toggle::after {
-  border: none;
-  content: none;
+/* Gaya Navbar Responsif */
+/* Gaya Navbar Responsif */
+@media (max-width: 768px) {
+  .navbar.navbar-light.my-bg-warning {
+    padding: 10px 0;
+    height: auto;
+  }
+
+  .navbar-brand img {
+    width: 150px;
+    height: auto;
+    /* Menghindari distorsi gambar */
+  }
+
+  .navbar-nav .nav-link {
+    font-size: 16px;
+  }
 }
 
-/* hero */
-hr{
+/* Penyesuaian Responsif Tambahan untuk Layar yang Lebih Kecil jika Diperlukan */
+@media (max-width: 576px) {
+  .navbar-brand img {
+    width: 120px;
+    height: auto;
+    /* Menghindari distorsi gambar */
+  }
+
+  .navbar-nav .nav-link {
+    font-size: 14px;
+  }
+}
+
+
+
+/* Tertiu Angin Bungaya section */
+hr {
   height: 1px !important;
   background-color: #DCDCDC;
   opacity: 1;
@@ -113,7 +167,7 @@ hr{
   display: flex;
 }
 
-hr.hr-hero-1{
+hr.hr-hero-1 {
   height: 1px !important;
   background-color: #CDFAD5;
   width: 800px;
@@ -122,7 +176,8 @@ hr.hr-hero-1{
   margin-bottom: 10px;
   margin: auto;
 }
-hr.hr-hero-2{
+
+hr.hr-hero-2 {
   height: 1px !important;
   background-color: #CDFAD5;
   width: 750px;
@@ -133,23 +188,46 @@ hr.hr-hero-2{
   margin-right: auto;
 }
 
-.card-hero{
-    height: 800px;
-  background-image: url('../images/hero.png');
-  background-position: unset;
+.card-hero {
+  min-height: 500px;
+  background-image: url('../images/bg.jpg');
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
 }
 
-/* produk */
-hr.hr-section-1{
+/* Membuat elemen .card-hero responsif pada layar yang lebih kecil */
+@media (max-width: 768px) {
+  .card-hero {
+    min-height: 300px;
+    /* Sesuaikan dengan tinggi yang diinginkan */
+    background-size: contain;
+    /* Atur agar gambar selalu muat di dalam elemen */
+    background-attachment: scroll;
+    /* Hentikan efek parallax pada layar kecil */
+  }
+}
+
+/* Penyesuaian tambahan untuk layar yang lebih kecil jika diperlukan */
+@media (max-width: 576px) {
+  .card-hero {
+    min-height: 200px;
+    /* Sesuaikan dengan tinggi yang diinginkan */
+  }
+}
+
+
+/* Produk section */
+hr.hr-section-1 {
   height: 2px !important;
   background-color: #CDFAD5;
   opacity: 1;
   border: none;
   margin-bottom: 0;
 }
-hr.hr-section-2{
+
+hr.hr-section-2 {
   height: 2px !important;
   width: 150px;
   background-color: #CDFAD5;
@@ -159,38 +237,39 @@ hr.hr-section-2{
   margin-top: -2px;
 }
 
-a.product-item, a.transaction-item{
+a.product-item,
+a.transaction-item {
   display: block;
   transition: .3s;
   text-decoration: none;
 }
 
-a.product-item:hover, a.transaction-item:hover{
+a.product-item:hover,
+a.transaction-item:hover {
   box-shadow: 0px 0px 10px rgba(0, 0, 0, .3);
 }
 
-/* pagination */
-.d-none.flex-sm-fill.d-sm-flex.align-items-sm-center.justify-content-sm-between div:nth-child(1){
+/* Pagination styles */
+.d-none.flex-sm-fill.d-sm-flex.align-items-sm-center.justify-content-sm-between div:nth-child(1) {
   display: none;
 }
-.d-none.flex-sm-fill.d-sm-flex.align-items-sm-center.justify-content-sm-between div{
+
+.d-none.flex-sm-fill.d-sm-flex.align-items-sm-center.justify-content-sm-between div {
   margin: 10px auto 0;
 }
-.pagination .page-link{
+
+.pagination .page-link {
   color: #CDFAD5;
 }
-.active>.page-link{
+
+.active>.page-link {
   background-color: #CDFAD5;
   border-color: #CDFAD5;
   color: #FFF;
 }
 
-dl dt{
+dl dt {
   font-weight: normal;
 }
 
-/* .btn {
-  width: auto;
-  background: #CDFAD5;
-  justify-content: center;
-} */
+/* Tertiu Angin Bungaya Animation */

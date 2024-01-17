@@ -20,6 +20,11 @@
   <link rel="stylesheet" href="/assets/admin/css/vertical-layout-light/style.css">
   <!-- endinject -->
   <link rel="shortcut icon" href="/assets/admin/images/favicon.png" />
+  <style>
+    body{
+      background-image: url("https://www.freepik.com/free-vector/hand-painted-watercolor-pastel-sky-background_13223496.htm#query=pastel%20background&position=1&from_view=keyword&track=ais") ;
+    }
+  </style>
 </head>
 
 <body>

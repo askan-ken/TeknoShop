@@ -6,7 +6,7 @@
   <div class="form-group">
     <label for="category">Pilih Kategori</label>
     <select class="form-select" id="select_category" aria-label="Default select example" name="category_id">
-      <option value="-" selected>Pilih Gender</option>
+      <option value="-" selected>Jenis produk</option>
       @foreach ($categories as $category)
       <option value="{{ $category->id }}">{{ $category->gender }}</option>
       @endforeach

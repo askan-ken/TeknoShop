@@ -53,10 +53,14 @@ data-bs-target="#modal-category">Tambah Kategori</button>
         <div class="modal-body">
             <input type="hidden" name="_method" id="method" value="POST">
             <select class="form-select" id="select_category" aria-label="Default select example" name="gender">
-                <option value="-" selected>Pilih Gender</option>
+                <option value="-" selected>Jenis produk</option>
                 <option value="Laki-laki">Laki-laki</option>
                 <option value="Perempuan">Perempuan</option>
                 <option value="Unisex">Unisex</option>
+                <option value="makanan">Makanan</option>
+                <option value="karya">Karya</option>
+
+
               </select>
         </div>
         <div class="modal-footer">

@@ -53,13 +53,13 @@
               <dd class="col-9 mb-0">: {{ $transaction->notes }}</dd>
             </dl>
           </div>
-          
+
           <div class="col-12 col-md-6 col-lg-5">
             <h3 class="font-bold h6  mb-2">Nomor Rekening</h3>
             <div class="card">
               <div class="card-body">
                 <h6>Pembayaran dapat melalui nomor rekening dibawah ini :</h6>
-                <h6>579801016686507 (BRI) a.n. Gilang Eko Prasetyo</h6>  
+                <h6>579801016686507 (BRI) a.n. TeknoShop</h6>
               </div>
           </div>
             <h3 class="font-bold h6 mt-4">Upload Bukti Pembayaran</h3>
@@ -150,7 +150,7 @@
   $(document).ready(function(){
      if($("#status").attr('data-status') === "menunggu pembayaran"){
        countdownInterval = window.setInterval(updateCountDown, 1000);
-     } 
+     }
   })
   // window.setInterval(updateCountDown, 1000);
 </script>

@@ -33,6 +33,11 @@
                 <li><a class="dropdown-item" href="/kategori?type=Perempuan">Perempuan</a></li>
                 <li><hr class="dropdown-divider"></li>
                 <li><a class="dropdown-item" href="/kategori?type=Unisex">Unisex</a></li>
+                <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="/kategori?type=makanan">makanan</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="/kategori?type=karya">karya</a></li>
+
               </ul>
             </li>
             <li class="nav-item me-lg-3">
